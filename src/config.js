@@ -9,6 +9,16 @@
  * ============================================================
  */
 
+const base = import.meta.env.BASE_URL || '/';
+
+export const getAssetUrl = (path) => {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) return path;
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${cleanBase}${cleanPath}`;
+};
+
 export const SITE_CONFIG = {
   // Brand Identity
   brandName: 'Aadhya Rao',
@@ -17,7 +27,7 @@ export const SITE_CONFIG = {
   
   // Main Artist Portrait Configuration
   heroPortrait: {
-    src: '/images/aadhya-portrait.jpg',
+    src: getAssetUrl('images/aadhya-portrait.jpg'),
     alt: 'Aadhya Rao, makeup artist in Bengaluru',
     expectedPath: 'public/images/aadhya-portrait.jpg',
   },
@@ -61,7 +71,7 @@ export const PORTFOLIO_PROJECTS = [
     id: 'modern-bride',
     title: 'The Modern Bride',
     category: 'Bridal',
-    image: '/images/modern-minimal.jpg',
+    image: getAssetUrl('images/modern-minimal.jpg'),
     alt: 'The Modern Bride — refined, luminous Indian bridal makeup with understated elegance',
     shortDescription: 'Refined, understated bridal styling with skin-first radiance and delicate definition.',
     fullDescription: 'A study in contemporary elegance — sheer, buildable coverage, soft champagne accents on the eyes, and a finish that allows your natural skin texture to glow through ceremony and celebrations.',
@@ -72,7 +82,7 @@ export const PORTFOLIO_PROJECTS = [
     id: 'rose-first-light',
     title: 'Rose at First Light',
     category: 'Engagement',
-    image: '/images/rose-gold-engagement.jpg',
+    image: getAssetUrl('images/rose-gold-engagement.jpg'),
     alt: 'Rose at First Light — romantic engagement makeup with warm rose gold undertones',
     shortDescription: 'Romantic engagement beauty with warm rose gold tones and dewy, effortless luminosity.',
     fullDescription: 'Designed for intimate celebratory light — warm rose-gold metallic tones on the lids, soft flush on the cheeks, and a fresh, dewy complexion that feels both celebratory and intimately personal.',
@@ -83,7 +93,7 @@ export const PORTFOLIO_PROJECTS = [
     id: 'study-in-gold',
     title: 'A Study in Gold',
     category: 'Reception',
-    image: '/images/golden-hour.jpg',
+    image: getAssetUrl('images/golden-hour.jpg'),
     alt: 'A Study in Gold — warm golden hour reception makeup with sculpted elegance',
     shortDescription: 'Warm golden radiance, sculpted bone structure, and seamless transition into evening celebration.',
     fullDescription: 'Formulated for evening lights and celebration — warm amber and gold highlights balance deep definition, creating a commanding yet harmonious presence across stage and reception floor.',
@@ -94,7 +104,7 @@ export const PORTFOLIO_PROJECTS = [
     id: 'soft-focus',
     title: 'Soft Focus',
     category: 'Occasion',
-    image: '/images/party-look.jpg',
+    image: getAssetUrl('images/party-look.jpg'),
     alt: 'Soft Focus — effortless occasion makeup with warm bronze notes and velvety radiance',
     shortDescription: 'Effortless occasion makeup with glowing skin, soft bronze tones, and versatile elegance.',
     fullDescription: 'Glamour without heaviness — soft-focus diffusion across the skin, warm bronze eye shading, and individual lash clusters for an easy, elevated finish suited to sangeets, cocktail dinners, or festive evenings.',
@@ -105,7 +115,7 @@ export const PORTFOLIO_PROJECTS = [
     id: 'after-dark-edit',
     title: 'The After-Dark Edit',
     category: 'Editorial',
-    image: '/images/smoky-eye.jpg',
+    image: getAssetUrl('images/smoky-eye.jpg'),
     alt: 'The After-Dark Edit — expressive editorial beauty with modern smoky definition',
     shortDescription: 'Expressive editorial artistry featuring rich smoky definition and intentional modern contrast.',
     fullDescription: 'Creative expression meeting modern editorial aesthetics — smoky, smudged kohl eyes contrasted with glass-like skin and quiet lips. A look crafted with deliberate restraint and artistic intensity.',
@@ -116,7 +126,7 @@ export const PORTFOLIO_PROJECTS = [
     id: 'tradition-reframed',
     title: 'Tradition, Reframed',
     category: 'Bridal',
-    image: '/images/traditional-bride.jpg',
+    image: getAssetUrl('images/traditional-bride.jpg'),
     alt: 'Tradition, Reframed — classic South Asian bridal elegance reimagined with modern lightness',
     shortDescription: 'Classic ceremonial Indian bridal beauty honoring traditional heritage with a breathable, modern finish.',
     fullDescription: 'A respectful homage to bridal heritage — rich ceremonial vermilion, intricate gold jewellery, and classic eye definition reimagined with contemporary lightness so the makeup feels fresh, weightless, and enduring through hours of rituals.',
@@ -134,7 +144,7 @@ export const SERVICES = [
     title: 'Bridal Makeup',
     tagline: 'Ceremonial & wedding morning',
     description: 'Comprehensive bridal beauty shaped around your facial architecture, skin undertone, and wedding ensemble. Tailored for comfort through long ceremonies and flawless camera presence.',
-    image: '/images/traditional-bride.jpg',
+    image: getAssetUrl('images/traditional-bride.jpg'),
     alt: 'Bridal makeup styling',
   },
   {
@@ -142,7 +152,7 @@ export const SERVICES = [
     title: 'Engagement & Pre-Wedding',
     tagline: 'Intimate ceremonies & celebrations',
     description: 'Romantic, radiant makeup designed to celebrate your milestone. Balanced for daylight ceremonies or candlelit evenings with luminous, breathable skin.',
-    image: '/images/rose-gold-engagement.jpg',
+    image: getAssetUrl('images/rose-gold-engagement.jpg'),
     alt: 'Engagement makeup styling',
   },
   {
@@ -150,7 +160,7 @@ export const SERVICES = [
     title: 'Reception Glamour',
     tagline: 'High-impact evening styling',
     description: 'A striking, transformed evening look with sculpted depth and statement features designed to command the room under ballroom and banquet lighting.',
-    image: '/images/royal-reception.jpg',
+    image: getAssetUrl('images/royal-reception.jpg'),
     alt: 'Reception makeup styling',
   },
   {
@@ -158,7 +168,7 @@ export const SERVICES = [
     title: 'Occasion & Sangeet',
     tagline: 'Celebrations, sangeets & cocktails',
     description: 'Effortless, dance-proof glamour for family celebrations, milestone parties, and festive occasions. Polished, expressive, and tailored to you.',
-    image: '/images/party-look.jpg',
+    image: getAssetUrl('images/party-look.jpg'),
     alt: 'Occasion and celebration styling',
   },
   {
@@ -166,7 +176,7 @@ export const SERVICES = [
     title: 'Editorial & Creative',
     tagline: 'Fashion shoots & conceptual briefs',
     description: 'Distinctive makeup artistry for fashion campaigns, editorial shoots, and creative visual projects with precise technical execution.',
-    image: '/images/smoky-eye.jpg',
+    image: getAssetUrl('images/smoky-eye.jpg'),
     alt: 'Editorial and creative makeup',
   },
   {
@@ -174,7 +184,7 @@ export const SERVICES = [
     title: 'Consultation & Look Design',
     tagline: 'One-on-one personalized planning',
     description: 'An intimate discussion to map out your aesthetic direction, discuss skin preparation routines, review outfit swatches, and design your bespoke look.',
-    image: '/images/artist-portrait.jpg',
+    image: getAssetUrl('images/artist-portrait.jpg'),
     alt: 'Personal consultation session',
   },
 ];

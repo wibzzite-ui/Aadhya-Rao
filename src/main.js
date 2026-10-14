@@ -6,7 +6,7 @@
  * ============================================================
  */
 
-import { SITE_CONFIG, PORTFOLIO_PROJECTS, SERVICES } from './config.js';
+import { SITE_CONFIG, PORTFOLIO_PROJECTS, SERVICES, getAssetUrl } from './config.js';
 
 // ─── INITIALIZATION ───
 document.addEventListener('DOMContentLoaded', () => {
@@ -311,10 +311,10 @@ function initInstagram() {
   if (!grid) return;
 
   const previewTiles = [
-    { src: '/images/hero-bridal.jpg', alt: 'Bridal portraiture preview' },
-    { src: '/images/rose-gold-engagement.jpg', alt: 'Rose at first light engagement preview' },
-    { src: '/images/golden-hour.jpg', alt: 'Warm golden hour reception preview' },
-    { src: '/images/smoky-eye.jpg', alt: 'Editorial after-dark study preview' },
+    { src: getAssetUrl('images/hero-bridal.jpg'), alt: 'Bridal portraiture preview' },
+    { src: getAssetUrl('images/rose-gold-engagement.jpg'), alt: 'Rose at first light engagement preview' },
+    { src: getAssetUrl('images/golden-hour.jpg'), alt: 'Warm golden hour reception preview' },
+    { src: getAssetUrl('images/smoky-eye.jpg'), alt: 'Editorial after-dark study preview' },
   ];
 
   grid.innerHTML = previewTiles.map(tile => `
