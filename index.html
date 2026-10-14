@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aadhya Rao — Makeup Artist & Bridal Beauty Specialist | Bengaluru</title>
+  <meta name="description" content="Aadhya Rao — Makeup Artist & Bridal Beauty Specialist based in Bengaluru. Makeup shaped around your features, your occasion, and the way you want to feel when the moment arrives." />
+  <meta name="keywords" content="Aadhya Rao, makeup artist, bridal makeup Bengaluru, Indian bride, wedding makeup, occasion makeup, editorial beauty" />
+  <meta property="og:title" content="Aadhya Rao — Makeup Artist & Bridal Beauty Specialist | Bengaluru" />
+  <meta property="og:description" content="Not a new face. A new feeling. Makeup shaped around your features and occasion." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation (Strictly 5 Primary Pages) -->
+  <header id="site-header" class="site-header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#home" class="nav-brand" aria-label="Aadhya Rao — Return to Home">
+        <span class="brand-wordmark">AADHYA RAO</span>
+        <span class="brand-tag">BENGALURU</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home" role="menuitem">Home</a></li>
+        <li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
+        <li role="none"><a href="#services" role="menuitem">Services</a></li>
+        <li role="none"><a href="#about" role="menuitem">About Aadhya</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact / Bookings</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Enquire for Date</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu-overlay">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true">
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+      <div class="mobile-menu-header">
+        <span class="brand-wordmark">AADHYA RAO</span>
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Aadhya</a></li>
+        <li><a href="#contact">Contact / Bookings</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="#contact" class="btn btn-primary btn-full">Enquire for Date</a>
+        <p class="mobile-menu-location">Bengaluru, Karnataka, India</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- PAGE 1: HOME (Hero & Introduction) -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-label animate-reveal">MAKEUP ARTIST · BENGALURU</div>
+          <h1 class="hero-headline animate-reveal" style="--delay: 0.1s">
+            Not a new face.<br />
+            <em>A new feeling.</em>
+          </h1>
+          <p class="hero-subtext animate-reveal" style="--delay: 0.2s">
+            Makeup shaped around your features, your occasion, and the way you want to feel when the moment arrives.
+          </p>
+          <div class="hero-ctas animate-reveal" style="--delay: 0.3s">
+            <a href="#services" class="btn btn-primary">Find Your Look</a>
+            <a href="#portfolio" class="btn btn-outline">Explore the Portfolio</a>
+          </div>
+          <div class="hero-categories animate-reveal" style="--delay: 0.4s">
+            <span>BRIDAL</span>
+            <span class="category-dot"></span>
+            <span>ENGAGEMENT</span>
+            <span class="category-dot"></span>
+            <span>RECEPTION</span>
+            <span class="category-dot"></span>
+            <span>EDITORIAL</span>
+          </div>
+        </div>
+
+        <div class="hero-image animate-reveal" style="--delay: 0.15s">
+          <div class="hero-image-frame" id="hero-image-frame">
+            <img 
+              id="hero-portrait-img" 
+              src="/images/aadhya-portrait.jpg" 
+              alt="Aadhya Rao, makeup artist in Bengaluru" 
+              width="500" 
+              height="625" 
+              loading="eager"
+              fetchpriority="high"
+            />
+            <div class="hero-image-accent"></div>
+            <div class="hero-image-caption">
+              <span>Aadhya Rao</span>
+              <span class="caption-divider">·</span>
+              <span>Makeup Artist · Bengaluru</span>
+            </div>
+            <div class="portrait-missing-notice" id="portrait-missing-notice" hidden>
+              <p>Artist portrait file not found.</p>
+              <code>Expected at: public/images/aadhya-portrait.jpg</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Introduction Lead-In -->
+      <div class="intro-statement-banner animate-reveal" style="--delay: 0.5s">
+        <div class="intro-statement-inner">
+          <p class="intro-quote">
+            “Every face has its own character. My approach is to bring it forward — with considered detail, thoughtful colour, and a finish that still feels like you.”
+          </p>
+          <span class="intro-signature">— Aadhya Rao</span>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator animate-reveal" style="--delay: 0.6s">
+        <span>Scroll to explore</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 4v16M2 14l6 6 6-6"/></svg>
+      </div>
+    </section>
+
+    <!-- PAGE 2: PORTFOLIO (Six Curated Projects) -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">PORTFOLIO</span>
+          <h2 class="section-title">Looks with a point of view.</h2>
+          <p class="section-subtitle">From timeless bridal elegance to modern, expressive beauty — explore a selection of looks and moods.</p>
+        </div>
+
+        <!-- Filter tabs: All, Bridal, Engagement, Reception, Editorial, Occasion -->
+        <div class="portfolio-filters" role="tablist" aria-label="Filter looks by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="Bridal" role="tab" aria-selected="false">Bridal</button>
+          <button class="filter-btn" data-filter="Engagement" role="tab" aria-selected="false">Engagement</button>
+          <button class="filter-btn" data-filter="Reception" role="tab" aria-selected="false">Reception</button>
+          <button class="filter-btn" data-filter="Editorial" role="tab" aria-selected="false">Editorial</button>
+          <button class="filter-btn" data-filter="Occasion" role="tab" aria-selected="false">Occasion</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid" role="tabpanel">
+          <!-- Six curated portfolio cards rendered dynamically by main.js -->
+        </div>
+
+        <div class="portfolio-footer-note">
+          <p>Concept projects crafted for demonstration. Each look illustrates a unique balance of skin prep, color harmony, and lighting design.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: SERVICES -->
+    <section id="services" class="services-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-label">SERVICES</span>
+          <h2 class="section-title">Made for your moment.</h2>
+          <p class="section-subtitle">Whether it’s a wedding morning, a celebration, or a creative brief, start with the occasion. We’ll take it from there.</p>
+        </div>
+
+        <div class="services-grid" id="services-grid">
+          <!-- Clean services rendered dynamically by main.js without invented fixed prices -->
+        </div>
+
+        <div class="services-note">
+          <p>
+            <strong>Personalized Consultation:</strong> Every booking begins with an in-depth conversation to understand your outfit swatches, event timeline, skin prep routine, and personal aesthetic. Final bookings are confirmed directly upon enquiry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: ABOUT AADHYA -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-layout">
+          <div class="about-image animate-on-scroll">
+            <div class="about-image-frame">
+              <img 
+                src="/images/aadhya-portrait.jpg" 
+                alt="Aadhya Rao, makeup artist in Bengaluru" 
+                loading="lazy" 
+                width="480" 
+                height="600" 
+              />
+            </div>
+            <div class="about-image-accent"></div>
+          </div>
+          <div class="about-content animate-on-scroll">
+            <span class="section-label">ABOUT AADHYA</span>
+            <h2 class="section-title">Your features lead. The artistry follows.</h2>
+            <div class="about-philosophy">
+              <p>
+                Every face has its own balance, structure, and presence. My approach to makeup is shaped by listening to what makes you feel most like yourself — reading the interplay of your bone structure, skin tone, chosen attire, and the light of the venue.
+              </p>
+              <p>
+                Whether it is the ritual richness of a bridal morning, the romance of an engagement, or an editorial brief, the craft lies in considered skin prep, refined colour harmony, and a weightless finish that stays radiant and effortless throughout your celebration.
+              </p>
+            </div>
+            
+            <div class="about-principles">
+              <div class="principle-item">
+                <span class="principle-number">01</span>
+                <div>
+                  <h4>Skin-First Finish</h4>
+                  <p>Luminous, breathable coverage that moves naturally and photographs flawlessly.</p>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-number">02</span>
+                <div>
+                  <h4>Harmonious Palette</h4>
+                  <p>Shades calibrated to harmonize with your jewellery, drape, and skin undertones.</p>
+                </div>
+              </div>
+              <div class="principle-item">
+                <span class="principle-number">03</span>
+                <div>
+                  <h4>Composed for the Day</h4>
+                  <p>Formulations tested for comfort and longevity through rituals, emotions, and light changes.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary">Start a Conversation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 5: CONTACT / BOOKINGS (Consolidates Enquiry Form, WhatsApp, Bengaluru Location & Instagram) -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <span class="section-label">BOOKINGS & ENQUIRIES</span>
+            <h2 class="section-title">Tell me what you're getting ready for.</h2>
+            <p class="contact-text">
+              Share the occasion, date and look you have in mind. We can start with a conversation.
+            </p>
+
+            <!-- Direct Contact & WhatsApp -->
+            <div class="contact-direct-card">
+              <h3 class="direct-card-title">Direct Messaging</h3>
+              <p class="direct-card-desc">For fast enquiries regarding wedding dates and availability:</p>
+              <button class="btn btn-whatsapp" id="whatsapp-btn" aria-label="Enquire on WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Enquire via WhatsApp</span>
+              </button>
+              <p class="config-note" id="whatsapp-note">WhatsApp link connects directly when configured in site settings.</p>
+            </div>
+
+            <!-- Bengaluru Location Reference -->
+            <div class="contact-location-card">
+              <h3 class="direct-card-title">Location & Availability</h3>
+              <p class="location-desc">
+                Based in <strong>Bengaluru, Karnataka</strong>. Available for on-location bridal appointments across Bengaluru and destination travel upon request.
+              </p>
+              <div class="location-badges">
+                <span class="badge">Bengaluru, KA</span>
+                <span class="badge">Destination Available</span>
+                <span class="badge">Studio & On-Location</span>
+              </div>
+            </div>
+
+            <!-- Curated Instagram Preview Module -->
+            <div class="contact-instagram-card">
+              <div class="instagram-card-header">
+                <div>
+                  <h3 class="direct-card-title">Follow the Visual Journal</h3>
+                  <p class="instagram-handle">@aadhyarao.beauty</p>
+                </div>
+                <a href="#" id="instagram-link" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">View Instagram</a>
+              </div>
+              <div class="instagram-mini-grid" id="instagram-grid">
+                <!-- 4 aesthetic previews rendered by JS -->
+              </div>
+              <p class="config-note">Preview feed. Connect your verified profile in site config.</p>
+            </div>
+          </div>
+
+          <!-- Validated Booking Enquiry Form -->
+          <div class="contact-form-wrapper">
+            <form id="enquiry-form" class="contact-form" novalidate>
+              <h3 class="form-heading">Enquiry Details</h3>
+              <p class="form-subheading">Fill in the essentials below to check date availability and schedule a consultation.</p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="form-name" name="name" required autocomplete="name" placeholder="e.g. Ananya Sharma" />
+                  <span class="form-error" id="error-name"></span>
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="form-email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="form-email" name="email" required autocomplete="email" placeholder="ananya@example.com" />
+                  <span class="form-error" id="error-email"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="form-phone" name="phone" autocomplete="tel" placeholder="+91 98765 43210" />
+                  <span class="form-error" id="error-phone"></span>
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="form-event-type">Occasion Type <span class="required">*</span></label>
+                  <select id="form-event-type" name="eventType" required>
+                    <option value="">Select occasion</option>
+                    <option value="bridal">Bridal Makeup</option>
+                    <option value="engagement">Engagement & Roka</option>
+                    <option value="reception">Reception Glamour</option>
+                    <option value="occasion">Occasion & Sangeet</option>
+                    <option value="editorial">Editorial / Shoot</option>
+                    <option value="consultation">Consultation Session</option>
+                  </select>
+                  <span class="form-error" id="error-event-type"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-event-date">Occasion Date <span class="required">*</span></label>
+                  <input type="date" id="form-event-date" name="eventDate" required />
+                  <span class="form-error" id="error-event-date"></span>
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="form-location">Event Location / Venue</label>
+                  <input type="text" id="form-location" name="location" placeholder="e.g. Palace Grounds, Bengaluru" />
+                  <span class="form-error" id="error-location"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-style">Preferred Look Mood</label>
+                  <select id="form-style" name="style">
+                    <option value="">Select preferred mood</option>
+                    <option value="modern-minimal">The Modern Bride (Understated & Dewy)</option>
+                    <option value="rose-first-light">Rose at First Light (Romantic & Luminous)</option>
+                    <option value="study-in-gold">A Study in Gold (Warm & Sculpted)</option>
+                    <option value="soft-focus">Soft Focus (Effortless Occasion Glow)</option>
+                    <option value="after-dark">The After-Dark Edit (Smoky & Expressive)</option>
+                    <option value="tradition-reframed">Tradition, Reframed (Classic Ceremonial)</option>
+                    <option value="undecided">Open to recommendation</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-message">Occasion Notes & Vision</label>
+                  <textarea id="form-message" name="message" rows="4" placeholder="Tell me about your outfit colors, ceremony timing, or specific look details you love..."></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-full" id="form-submit">Enquire About Your Date</button>
+                <p class="form-disclaimer">Concept portfolio project. Form is client-validated for testing. Setup instructions provided upon submission.</p>
+              </div>
+
+              <div class="form-success" id="form-success" hidden>
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--color-lilac)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+                <h3>Enquiry Verified</h3>
+                <p>Your enquiry details have been validated. In production, configure your endpoint in <code>SITE_CONFIG.contact.endpoint</code> to route submissions to your inbox.</p>
+                <button type="button" class="btn btn-outline" id="form-reset-btn">Create Another Enquiry</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="brand-wordmark footer-wordmark">AADHYA RAO</span>
+          <p class="footer-tagline">“Your features. Your story. Your kind of beautiful.”</p>
+          <p class="footer-role">Makeup Artist & Bridal Beauty Specialist · Bengaluru</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Five Pages</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Aadhya</a></li>
+            <li><a href="#contact">Contact / Bookings</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Curated Looks</h4>
+          <ul>
+            <li><a href="#portfolio">The Modern Bride</a></li>
+            <li><a href="#portfolio">Rose at First Light</a></li>
+            <li><a href="#portfolio">A Study in Gold</a></li>
+            <li><a href="#portfolio">Soft Focus</a></li>
+            <li><a href="#portfolio">Tradition, Reframed</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#contact">Enquiry Form</a></li>
+            <li><a href="#contact">WhatsApp Direct</a></li>
+            <li><a href="#contact">Bengaluru Studio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <p>This is a fictional concept portfolio website. Aadhya Rao is a fictional persona created for portfolio demonstration.</p>
+          <p class="footer-attribution">Concept website crafted by <strong>WibzZite</strong> · Every Site Has a Story.</p>
+        </div>
+        <p class="footer-copyright">&copy; 2024 Aadhya Rao Beauty · Concept Project</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Unobtrusive Beauty Assistant Chatbot -->
+  <div class="chatbot-wrapper" id="chatbot-wrapper">
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open beauty assistant chat">
+      <svg class="chatbot-icon-open" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      <svg class="chatbot-icon-close" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="chatbot-window" id="chatbot-window" role="dialog" aria-label="Aadhya's Beauty Assistant" hidden>
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar">AR</div>
+          <div>
+            <h3 class="chatbot-name">Aadhya's Assistant</h3>
+            <span class="chatbot-status">Predefined Guides</span>
+          </div>
+        </div>
+        <button class="chatbot-minimize" id="chatbot-minimize" aria-label="Close assistant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages" aria-live="polite">
+        <!-- Messages rendered by JS -->
+      </div>
+      <div class="chatbot-quick-replies" id="chatbot-quick-replies">
+        <!-- Quick reply options rendered by JS -->
+      </div>
+      <div class="chatbot-input-area" id="chatbot-input-area">
+        <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Ask about bridal looks, prep..." aria-label="Chat query input" />
+        <button class="chatbot-send" id="chatbot-send" aria-label="Send query">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessible Project Detail Modal -->
+  <div class="portfolio-modal-overlay" id="portfolio-modal" role="dialog" aria-modal="true" aria-label="Project details" hidden>
+    <div class="portfolio-modal">
+      <button class="modal-close" id="modal-close" aria-label="Close project view">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-content" id="modal-content">
+        <!-- Modal project view rendered by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
